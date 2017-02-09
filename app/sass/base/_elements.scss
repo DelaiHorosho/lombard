@@ -1,0 +1,31 @@
+.call_trigger{
+  display: block;
+  position: relative;
+  float: left;
+  width: 176px;
+  margin-right: 31px;
+  padding: 11px 0 9px 0;
+  @include border-box;
+  border-radius: 16px;
+  border: 1px solid #ffc80a;
+  text-align: center;
+  background-color: transparent;
+  color: #ffc80a;
+  font-size: 12px;
+  font-weight: 500;
+  @include transition(0.4s);
+  &:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: #ffc80a;
+  }
+}
+.call_number{
+  display: block;
+  position: relative;
+  float: left;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 39px;
+}

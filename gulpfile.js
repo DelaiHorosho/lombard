@@ -165,7 +165,6 @@ gulp.task('watch', ['compress', 'extend-pages', 'css-libs', 'js-libs', 'img', 's
     gulp.watch('app/img/**/*', ['img']);// Наблюдение за папкой img
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch(['app/html/**/*.html'], ['extend-pages']);// Наблюдение за HTML-файлами в папке html/pages
-    /* gulp.watch(['app/html/!*.html'], ['extend-blocks']);// Наблюдение за HTML-файлами в папке html*/
     gulp.watch('app/js/**/*.js', ['compress']); // Наблюдение за js-файлами
 });
 
