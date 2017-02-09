@@ -1,5 +1,5 @@
 {
-  "name": "fast-start",
+  "name": "lombard",
   "version": "1.0.0",
   "description": "Набор включенных технологий: HTML, CSS, JS, Gulp, SCSS, PostCSS, JQuery, Bower",
   "main": "gulpfile.js",
@@ -20,7 +20,11 @@
     "gulp-postcss": "^6.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+<<<<<<< HEAD
     "gulp-sourcemaps": "^1.11.1",
+=======
+    "gulp-sourcemaps": "^2.4.1",
+>>>>>>> a6fd7cfe329875f5a4df6f75836a18c8687c01a3
     "gulp-uglifyjs": "^0.6.2",
     "gulp.spritesmith": "^6.3.0",
     "imagemin-pngquant": "^5.0.0",
@@ -29,6 +33,7 @@
     "postcss-focus": "^1.0.0",
     "postcss-font-magician": "^1.6.0",
     "postcss-px-to-em": "^1.0.1",
+<<<<<<< HEAD
     "postcss-pxtorem": "^3.3.1",
     "postcss-short": "^3.0.3",
     "postcss-short-spacing": "^2.0.1",
@@ -36,6 +41,15 @@
     "rimraf": "^2.5.4",
     "stylefmt": "^5.1.1",
     "stylelint-config-standard": "^15.0.1",
+=======
+    "postcss-pxtorem": "^4.0.0",
+    "postcss-short": "^3.0.3",
+    "postcss-short-spacing": "^2.0.1",
+    "postcss-sorting": "^2.0.1",
+    "rimraf": "^2.5.4",
+    "stylefmt": "^5.1.1",
+    "stylelint-config-standard": "^16.0.0",
+>>>>>>> a6fd7cfe329875f5a4df6f75836a18c8687c01a3
     "yargs": "^6.6.0"
   },
   "scripts": {
@@ -43,12 +57,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AKD47/fast-start.git"
+    "url": "git+https://github.com/DelaiHorosho/lombard.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AKD47/fast-start/issues"
+    "url": "https://github.com/DelaiHorosho/lombard/issues"
   },
-  "homepage": "https://github.com/AKD47/fast-start#readme"
+  "homepage": "https://github.com/DelaiHorosho/lombard#readme"
 }
