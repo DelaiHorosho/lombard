@@ -1,0 +1,28 @@
+.after-header{
+  background-image: url(../img/after-header.jpg);
+  background-repeat: no-repeat;
+
+  .after-header-content{
+    width: 962px;
+    margin: 0 auto;
+
+    h1{
+      font-size: 36px;
+    }
+    p.slogan{
+      font-size: 17px;
+      color: #fff;
+      background-color: #747473;
+      width: 422px;
+      padding-left: 11px;
+    }
+    li{
+      font-size: 14px;
+    }
+    a{
+      color: #191919;
+      font-size: 16px;
+      background-color: #ffc80a;
+    }
+  }
+}
