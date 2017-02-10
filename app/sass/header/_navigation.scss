@@ -1,0 +1,40 @@
+.header__navigation{
+  display: block;
+  position: relative;
+  float: left;
+  width: 505px;
+  margin-top: 45px;
+  #header-menu{
+    display: none;
+  }
+}
+.header__nav{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li{
+    flex: 1 0 0;
+    position: relative;
+    float: left;
+    a{
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      color: #191919;
+      @include transition(0.4s);
+      &:hover{
+        color: #ffc80a;
+      }
+    }
+  }
+}

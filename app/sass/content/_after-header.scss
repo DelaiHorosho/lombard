@@ -1,6 +1,15 @@
+main{
+  float: left;
+  width: 100%;
+}
 .after-header{
   background-image: url(../img/after-header.jpg);
   background-repeat: no-repeat;
+  background-position: center top;
+  float: left;
+  width: 100%;
+  padding-top: 59px;
+  padding-bottom: 82px;
 
   .after-header-content{
     width: 962px;
@@ -8,21 +17,81 @@
 
     h1{
       font-size: 36px;
+      margin-top: 0;
+      margin-bottom: 0px;
     }
     p.slogan{
-      font-size: 17px;
-      color: #fff;
+      padding-left: 14px;
+      width: 409px;
       background-color: #747473;
-      width: 422px;
-      padding-left: 11px;
+      color: #fff;
+      font-weight: 400;
+      font-size: 17px;
+      margin-top: 12px;
+      margin-bottom: 0px;
+      padding-top: 6px;
+      padding-bottom: 8px;
     }
-    li{
-      font-size: 14px;
+    p.zalog{
+      font-weight: 400;
+      color: #191919;
+      font-size: 18px;
+    }
+    ul{
+      padding-left: 0;
+      @include display(flex);
+
+      li{
+        font-size: 14px;
+        padding-left: 44px;
+        height: 27px;
+        margin-right: 18px;
+        background-position: left;
+        @include display(flex);
+        @include justify-content(center);
+        @include flex-direction(column);
+
+        &:first-child{
+          background-image: url(../img/ico-1.png);
+          background-repeat: no-repeat;
+        }
+        &:nth-child(2){
+          background-image: url(../img/ico-2.png);
+          background-repeat: no-repeat;
+          padding-left: 28px;
+        }
+        &:nth-child(3){
+          background-image: url(../img/ico-3.png);
+          background-repeat: no-repeat;
+          padding-left: 30px;
+        }
+        &:last-child{
+          background-image: url(../img/ico-4.png);
+          background-repeat: no-repeat;
+          padding-left: 28px;
+        }
+      }
     }
     a{
-      color: #191919;
-      font-size: 16px;
       background-color: #ffc80a;
+      color: #191919;
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-top: 34px;
+      width: 228px;
+      margin-left: 5px;
+      font-weight: 900;
+      text-align: center;
+      height: 46px;
+      border-radius: 25px;
+      @include display(flex);
+      @include justify-content(center);
+      @include flex-direction(column);
+      @include transition(all .3s ease-out);
+
+      &:hover{
+        @include box-shadow(0 3px 4px rgba(0,0,0,.3));
+      }
     }
   }
 }
