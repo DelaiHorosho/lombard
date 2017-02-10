@@ -1,43 +1,99 @@
 .zayavka-wrapper{
   background-image: url(../img/zayavka.jpg);
   background-repeat: no-repeat;
+  background-position: center top;
   float: left;
   width: 100%;
 
   .zayavka{
     width: 780px;
     margin: 0 auto;
+    padding-bottom: 65px;
 
     h2{
       font-size: 29px;
       color: #191919;
       font-family: Lato-Black;
+      text-align: center;
+      margin-top: 55px;
+      margin-bottom: 20px;
     }
     p{
       color: #191919;
       font-size: 16px;
       font-weight: 400;
+      text-align: center;
 
       span{
         font-weight: 700;
       }
     }
     form{
-      input{
+      margin-top: 35px;
 
-        @include placeholder{
-          font-size: 16px;
-          color: #595959;
-          font-weight: 400;
+      input{
+        border-radius: 25px;
+        border: none;
+        @include box-shadow(7px 0 30px rgba(92,95,101, .30));
+        font-size: 16px;
+        color: #595959;
+        font-weight: 400;
+        height: 45px;
+
+        &:first-child{
+          width: 240px;
+        }
+        &:nth-child(2){
+          margin-left: 13px;
+          width: 288px;
+          margin-right: 13px;
+        }
+        &:last-child{
+          width: 219px;
         }
       }
+
+      input:focus::-webkit-input-placeholder {
+        opacity: 0; transition: opacity 0.3s ease;}
+      input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+      input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+      input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+      input[placeholder]{
+        font-size: 16px;
+        color: #595959;
+        font-weight: 400;
+        text-align: center;
+      }
+      input::-moz-placeholder{
+        font-size: 16px;
+        color: #595959;
+        font-weight: 400;
+        text-align: center;
+      }
+      input:-moz-placeholder{
+        font-size: 16px;
+        color: #595959;
+        font-weight: 400;
+        text-align: center;
+      }
+      input:-ms-input-placeholder{
+        font-size: 16px;
+        color: #595959;
+        font-weight: 400;
+        text-align: center;
+      }
+
       input[type='submit']{
         background-color: #ffcc2e;
         color: #191919;
         font-weight: 700;
+        @include transition(all .3s ease-out);
+        @include box-shadow(0 0 10px rgba(255,193,0, 1));
 
         &:hover{
           cursor: pointer;
+          @include box-shadow(0 3px 4px rgba(0,0,0,.3));
         }
       }
     }
