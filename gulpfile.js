@@ -118,7 +118,7 @@ gulp.task('sass', function () { // Создаем таск Sass
 gulp.task('browser-sync', function () { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
         proxy: {
-            target: 'lombard' // Директория для сервера - app
+            target: '' // Директория для сервера - app
         },
         ghostMode: {
             clicks: true,
@@ -160,7 +160,7 @@ gulp.task('extend-blocks', function () {
         .pipe(gulp.dest('./'))
 });
 
-gulp.task('watch', ['browser-sync', 'compress', 'extend-pages', 'css-libs', 'js-libs', 'img', 'sass'], function () {
+gulp.task('watch', ['compress', 'extend-pages', 'css-libs', 'js-libs', 'img', 'sass'], function () {
     gulp.watch('app/libs/**/*', ['css-libs']); // Наблюдение за папкой libs
     gulp.watch('app/img/**/*', ['img']);// Наблюдение за папкой img
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
