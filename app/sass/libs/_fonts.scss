@@ -1,1 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900&subset=latin-ext');
+@include font-face("Lato-Black", "../fonts/Lato-Black/Lato-Black");
+
+@font-face {
+  font-family: "Lato-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Lato-Black/Lato-Black.woff") format("woff"),
+  url("../fonts/Lato-Black/Lato-Black.woff") format("woff2"),
+  url("../fonts/Lato-Black/Lato-Black.ttf") format("truetype"),
+  url("../fonts/Lato-Black/Lato-Black.eot") format("eot"); }

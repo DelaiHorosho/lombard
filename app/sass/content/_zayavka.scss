@@ -1,5 +1,45 @@
-.zayvka{
+.zayavka-wrapper{
   background-image: url(../img/zayavka.jpg);
   background-repeat: no-repeat;
   float: left;
+  width: 100%;
+
+  .zayavka{
+    width: 780px;
+    margin: 0 auto;
+
+    h2{
+      font-size: 29px;
+      color: #191919;
+      font-family: Lato-Black;
+    }
+    p{
+      color: #191919;
+      font-size: 16px;
+      font-weight: 400;
+
+      span{
+        font-weight: 700;
+      }
+    }
+    form{
+      input{
+
+        @include placeholder{
+          font-size: 16px;
+          color: #595959;
+          font-weight: 400;
+        }
+      }
+      input[type='submit']{
+        background-color: #ffcc2e;
+        color: #191919;
+        font-weight: 700;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
