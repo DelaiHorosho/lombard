@@ -6,6 +6,14 @@
   background-position: 152px 26px;
   padding-bottom: 72px;
 
+  @include breakpoint(max-width 1200px){
+    background-position: 15px 26px;
+  }
+  @include breakpoint(max-width 979px){
+    background-position: 0px 125px;
+    background-size: 190px;
+  }
+
   .zalog{
     width: 560px;
     margin: 0 auto;

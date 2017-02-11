@@ -5,10 +5,18 @@
   float: left;
   width: 100%;
 
+  @include breakpoint(max-width 979px){
+    background-color: #F8F8F8;
+  }
+
   .zayavka{
     width: 780px;
     margin: 0 auto;
     padding-bottom: 65px;
+
+    @include breakpoint(max-width 979px){
+      width: 738px;
+    }
 
     h2{
       font-size: 29px;
@@ -31,6 +39,13 @@
     form{
       margin-top: 35px;
 
+      @include breakpoint(max-width 979px){
+        @include display(flex);
+        @include flex-direction(column);
+        width: 300px;
+        margin: 0 auto;
+      }
+
       input{
         border-radius: 25px;
         border: none;
@@ -40,16 +55,34 @@
         font-weight: 400;
         height: 45px;
 
+        @include breakpoint(max-width 979px){
+          margin-bottom: 15px;
+        }
+
         &:first-child{
           width: 240px;
+
+          @include breakpoint(max-width 979px){
+            width: 100%;
+          }
         }
         &:nth-child(2){
           margin-left: 13px;
           width: 288px;
           margin-right: 13px;
+
+          @include breakpoint(max-width 979px){
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+          }
         }
         &:last-child{
           width: 219px;
+
+          @include breakpoint(max-width 979px){
+            width: 100%;
+          }
         }
       }
 

@@ -8,4 +8,23 @@
   src: url("fonts/Lato-Black/Lato-Black.woff") format("woff"),
   url("../fonts/Lato-Black/Lato-Black.woff") format("woff2"),
   url("../fonts/Lato-Black/Lato-Black.ttf") format("truetype"),
-  url("../fonts/Lato-Black/Lato-Black.eot") format("eot"); }
+  url("../fonts/Lato-Black/Lato-Black.eot") format("eot");
+}
+@font-face {
+  font-family: "Lato-Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Lato-Heavy/Lato-Heavy.woff") format("woff"),
+  url("../fonts/Lato-Heavy/Lato-Heavy.woff") format("woff2"),
+  url("../fonts/Lato-Heavy/Lato-Heavy.ttf") format("truetype"),
+  url("../fonts/Lato-Heavy/Lato-Heavy.eot") format("eot");
+}
+@font-face {
+  font-family: "Lato-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Lato-Medium/Lato-Medium.woff") format("woff"),
+  url("../fonts/Lato-Medium/Lato-Medium.woff") format("woff2"),
+  url("../fonts/Lato-Medium/Lato-Medium.ttf") format("truetype"),
+  url("../fonts/Lato-Medium/Lato-Medium.eot") format("eot");
+}

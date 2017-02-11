@@ -706,4 +706,4 @@ function Validation() {
         this.tpl[name] = tpl;
         this.tpl_msg[name] = msg;
     }
-}
+} 

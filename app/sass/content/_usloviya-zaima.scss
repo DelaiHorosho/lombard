@@ -1,0 +1,120 @@
+#main-zaima{
+  background-color: #f8f8f8;
+
+  section{
+    width: 962px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    @include display(flex);
+    @include flex-direction(column);
+    border-left: 1px solid #dfe2e5;
+    border-right: 1px solid #dfe2e5;
+
+    .wrapper{
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 23px;
+    }
+
+    h2{
+      font-size: 20px;
+      color: #191919;
+      font-weight: 800;
+      font-family: Lato-Heavy;
+      text-transform: uppercase;
+    }
+    ul{
+      margin-top: 32px;
+      padding-left: 45px;
+
+      li{
+        list-style: none;
+        margin-bottom: 32px;
+        position: relative;
+
+        &:first-child{
+          &:before{
+            display: block;
+            content: '1';
+            width: 25px;
+            height: 25px;
+            border: 1px solid #ffd545;
+            position: absolute;
+            left: -43px;
+            top: 0;
+            border-radius: 40px;
+            text-align: center;
+            line-height: 21px;
+          }
+        }
+        &:nth-child(2){
+          &:before{
+            display: block;
+            content: '2';
+            width: 25px;
+            height: 25px;
+            border: 1px solid #ffd545;
+            position: absolute;
+            left: -43px;
+            top: 0;
+            border-radius: 40px;
+            text-align: center;
+            line-height: 21px;
+          }
+        }
+        &:nth-child(3){
+          &:before{
+            display: block;
+            content: '3';
+            width: 25px;
+            height: 25px;
+            border: 1px solid #ffd545;
+            position: absolute;
+            left: -43px;
+            top: 0;
+            border-radius: 40px;
+            text-align: center;
+            line-height: 21px;
+          }
+        }
+
+        p{
+          &:first-child{
+            font-family: Lato-Heavy;
+            font-size: 18px;
+            color: #191919;
+            margin-bottom: 0;
+          }
+          &:last-child{
+            font-size: 15px;
+            color: #354052;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    a{
+      background-color: #ffc80a;
+      color: #191919;
+      font-size: 18px;
+      width: 214px;
+      font-family: Lato-Black;
+      text-align: center;
+      height: 46px;
+      border-radius: 25px;
+      @include display(flex);
+      @include justify-content(center);
+      @include flex-direction(column);
+      @include transition(all .3s ease-out);
+      @include box-shadow(0 0 10px rgba(255,193,0, 1));
+
+      &:hover{
+        @include box-shadow(0 3px 4px rgba(0,0,0,.3));
+      }
+    }
+  }
+
+  .usloviya-zaima{
+
+  }
+}

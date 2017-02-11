@@ -9,6 +9,10 @@
     position: relative;
     width: 962px;
     margin: 0 auto;
+
+    @include breakpoint(max-width 979px){
+      width: 738px;
+    }
   }
   &__logo{
     display: block;
