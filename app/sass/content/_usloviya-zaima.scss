@@ -10,10 +10,19 @@
     border-left: 1px solid #dfe2e5;
     border-right: 1px solid #dfe2e5;
 
+    @include breakpoint(max-width 979px){
+      width: 100%;
+      border: none;
+    }
+
     .wrapper{
       width: 80%;
       margin: 0 auto;
       padding-top: 23px;
+
+      @include breakpoint(max-width 979px){
+        width: 95%;
+      }
     }
 
     h2{
@@ -74,7 +83,7 @@
             top: 0;
             border-radius: 40px;
             text-align: center;
-            line-height: 21px;
+            line-height: 24px;
           }
         }
 

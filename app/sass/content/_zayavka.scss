@@ -2,9 +2,15 @@
   background-image: url(../img/zayavka.jpg);
   background-repeat: no-repeat;
   background-position: center top;
+  -webkit-background-size: 100%;
+  background-size: 100%;
   float: left;
   width: 100%;
 
+  @include breakpoint(max-width 1200px){
+    -webkit-background-size: auto;
+    background-size: auto;
+  }
   @include breakpoint(max-width 979px){
     background-color: #F8F8F8;
   }
@@ -17,6 +23,13 @@
     @include breakpoint(max-width 979px){
       width: 738px;
     }
+    @include breakpoint(max-width 767px){
+      width: 100%;
+    }
+    @include breakpoint(max-width 479px){
+      padding-bottom: 25px;
+      width: 90%;
+    }
 
     h2{
       font-size: 29px;
@@ -25,12 +38,28 @@
       text-align: center;
       margin-top: 55px;
       margin-bottom: 20px;
+
+      @include breakpoint(max-width 767px){
+        font-size: 26px;
+      }
+      @include breakpoint(max-width 479px){
+        margin-top: 22px;
+      }
     }
     p{
       color: #191919;
       font-size: 16px;
       font-weight: 400;
       text-align: center;
+
+      @include breakpoint(max-width 767px){
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include breakpoint(max-width 479px){
+        font-size: 14px;
+      }
 
       span{
         font-weight: 700;
@@ -78,7 +107,7 @@
           }
         }
         &:last-child{
-          width: 219px;
+          width: 215px;
 
           @include breakpoint(max-width 979px){
             width: 100%;

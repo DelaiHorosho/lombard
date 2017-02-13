@@ -1,0 +1,95 @@
+.contacts-wrapper{
+  float: left;
+  width: 100%;
+  background-color: #f8f8f8;
+
+  .contacts{
+    width: 962px;
+    margin: 0 auto;
+    border-left: 1px solid #dfe2e5;
+    border-right: 1px solid #dfe2e5;
+    border-bottom: 1px solid #dfe2e5;
+    padding-top: 65px;
+    background-color: #fff;
+    background-image: url(../img/contacts-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 420px 30px;
+    padding-bottom: 178px;
+    margin-bottom: 35px;
+
+    @include breakpoint(max-width 979px){
+      width: 100%;
+      border: none;
+    }
+
+    .content{
+      width: 765px;
+      margin: 0 auto;
+
+      @include breakpoint(max-width 979px){
+        width: 95%;
+      }
+
+      h1{
+        font-family: Lato-Heavy;
+        font-size: 20px;
+        color: #191919;
+        margin-top: 0;
+        margin-bottom: 47px;
+        text-transform: uppercase;
+      }
+      ul{
+        padding-left: 0;
+
+        li{
+          list-style: none;
+          font-size: 15px;
+          color: #354052;
+          padding-left: 43px;
+          margin-bottom: 31px;
+
+          span{
+            font-family: Lato-Heavy;
+            font-size: 18px;
+            color: #191919;
+          }
+
+          &:first-child{
+            background-image: url(../img/ico-1.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+          }
+          &:nth-child(2){
+            background-image: url(../img/ico-2.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+          }
+          &:nth-child(3){
+            background-image: url(../img/ico-3.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+          }
+        }
+      }
+      a{
+        background-color: #ffc80a;
+        color: #191919;
+        font-size: 18px;
+        width: 285px;
+        font-family: Lato-Black;
+        text-align: center;
+        height: 46px;
+        border-radius: 25px;
+        @include display(flex);
+        @include justify-content(center);
+        @include flex-direction(column);
+        @include transition(all .3s ease-out);
+        @include box-shadow(0 0 10px rgba(255,193,0, 1));
+
+        &:hover{
+          @include box-shadow(0 3px 4px rgba(0,0,0,.3));
+        }
+      }
+    }
+  }
+}

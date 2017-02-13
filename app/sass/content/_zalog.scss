@@ -13,6 +13,12 @@
     background-position: 0px 125px;
     background-size: 190px;
   }
+  @include breakpoint(max-width 767px){
+    background: none;
+  }
+  @include breakpoint(max-width 479px){
+    padding-bottom: 40px;
+  }
 
   .zalog{
     width: 560px;
@@ -20,14 +26,36 @@
     color: #191919;
     text-align: center;
 
+    @include breakpoint(max-width 767px){
+      width: 100%;
+    }
+
     h2{
       font-size: 29px;
       font-family: Lato-Black;
       margin-top: 97px;
       margin-bottom: 0;
+
+      @include breakpoint(max-width 979px){
+        margin-top: 60px;
+      }
+      @include breakpoint(max-width 767px){
+        font-size: 24px;
+      }
+      @include breakpoint(max-width 479px){
+        font-size: 22px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+      }
     }
     p{
       font-size: 16px;
+
+      @include breakpoint(max-width 479px){
+        font-size: 14px;
+      }
 
       &:nth-child(2){
         margin-top: 11px;

@@ -21,9 +21,11 @@
 
     <div class="header__wrapper">
 
-        <a href="/" class="header__logo">Logo<span>type</span></a>
+        <a href="./" class="header__logo">Logo<span>type</span></a>
 
-        <div class="burger"></div>
+        <div class="burger-wrapper">
+            <div class="burger"></div>
+        </div>
 
         <div class="header__navigation">
 
@@ -36,17 +38,14 @@
                 </div>
             </a>
 
-
-
-            <ul class="header__nav">
-                <li><a href="#">Главная</a></li>
+            <ul class="menu">
+                <li><a href="./">Главная</a></li>
                 <li><a href="usloviya-zaima.html">Условия выдачи займа</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
-
         </div>
 
-        <a href="#" class="call_trigger">Заказать обратный звонок</a>
+        <a href="#open-modal" class="call_trigger">Заказать обратный звонок</a>
 
         <a href="tel:+73412000000" class="tel">+7 (3412) 00 - 00 - 00</a>
 
@@ -127,10 +126,21 @@
         <a href="/" class="footer__logo">Logo<span>type</span></a>
 
         <div class="footer__callback">
-            <a href="#" class="call_trigger">Заказать обратный звонок</a>
+            <a href="#open-modal" class="call_trigger">Заказать обратный звонок</a>
             <span class="call_number">+7 (3412) 00 - 00 - 00</span>
         </div>
 
+    </div>
+
+    <div id="open-modal">
+        <a class="close-area" href="#close"></a>
+        <div class="modal_window">
+            <a href="#close" title="Закрыть" class="close">X</a>
+            <h1>Заказать обратный звонок</h1>
+            <input required="required" type="text" name="name" placeholder="Имя">
+            <input required="required" type="text" name="phone" placeholder="Телефон">
+            <input type="submit" value="Заказать">
+        </div>
     </div>
 
 </footer>

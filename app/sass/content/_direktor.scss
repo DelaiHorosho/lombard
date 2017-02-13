@@ -13,11 +13,21 @@
     @include breakpoint(max-width 979px){
       width: 738px;
     }
+    @include breakpoint(max-width 767px){
+      @include flex-direction(column);
+      width: 100%;
+    }
 
     .info{
       @include display(flex);
       @include flex-direction(column);
       margin-top: 22px;
+
+      @include breakpoint(max-width 767px){
+        width: 168px;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       p{
         margin-bottom: 0;
@@ -45,25 +55,47 @@
       width: 65%;
       padding-top: 38px;
 
+      @include breakpoint(max-width 767px){
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       &:before{
         content: " ";
         background-image: url(../img/quotes-top.png);
+        background-repeat: no-repeat;
         display: block;
         position: absolute;
         width: 36px;
         height: 24px;
         left: -60px;
         top: 35px;
+
+        @include breakpoint(max-width 767px){
+          left: -48px;
+        }
+        @include breakpoint(max-width 479px){
+          left: -32px;
+          -webkit-background-size: 80%;
+          background-size: 80%;
+        }
       }
       &:after{
         content: " ";
         background-image: url(../img/quotes-bot.png);
+        background-repeat: no-repeat;
         display: block;
         position: absolute;
         width: 35px;
         height: 23px;
         right: -8px;
         bottom: -19px;
+
+        @include breakpoint(max-width 479px){
+          -webkit-background-size: 80%;
+          background-size: 80%;
+        }
       }
       p{
         margin-bottom: 20px;

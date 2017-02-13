@@ -6,10 +6,25 @@ main{
   background-image: url(../img/after-header.jpg);
   background-repeat: no-repeat;
   background-position: center top;
+  -webkit-background-size: 100%;
+  background-size: 100%;
   float: left;
   width: 100%;
   padding-top: 59px;
-  padding-bottom: 82px;
+  padding-bottom: 35px;
+
+  @include breakpoint(max-width 1200px){
+    -webkit-background-size: auto;
+    background-size: auto;
+  }
+  @include breakpoint(max-width 767px){
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
+  @include breakpoint(max-width 479px){
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
 
   .after-header-content{
     width: 962px;
@@ -18,12 +33,28 @@ main{
     @include breakpoint(max-width 979px){
       width: 738px;
     }
+    @include breakpoint(max-width 767px){
+      width: 100%;
+    }
+    @include breakpoint(max-width 479px){
+      width: 90%;
+    }
 
     h1{
       font-size: 36px;
       margin-top: 0;
       margin-bottom: 0px;
       font-family: Lato-Heavy;
+
+      @include breakpoint(max-width 979px){
+        text-align: center;
+      }
+      @include breakpoint(max-width 767px){
+        font-size: 34px;
+      }
+      @include breakpoint(max-width 479px){
+        font-size: 22px;
+      }
     }
     p.slogan{
       padding-left: 14px;
@@ -36,15 +67,44 @@ main{
       margin-bottom: 0px;
       padding-top: 6px;
       padding-bottom: 8px;
+
+      @include breakpoint(max-width 979px){
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include breakpoint(max-width 479px){
+        width: 75%;
+      }
     }
     p.zalog{
       font-weight: 400;
       color: #191919;
       font-size: 18px;
+
+      @include breakpoint(max-width 979px){
+        width: 373px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include breakpoint(max-width 479px){
+        width: 175px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
     ul{
       padding-left: 0;
       @include display(flex);
+
+      @include breakpoint(max-width 979px){
+        display: block;
+        width: 373px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include breakpoint(max-width 479px){
+        width: 178px;
+      }
 
       li{
         font-size: 14px;
@@ -56,6 +116,15 @@ main{
         @include justify-content(center);
         @include flex-direction(column);
 
+        @include breakpoint(max-width 979px){
+          float: left;
+        }
+        @include breakpoint(max-width 479px){
+          width: 100%;
+          padding-bottom: 4px;
+          padding-top: 4px;
+        }
+
         &:first-child{
           background-image: url(../img/ico-1.png);
           background-repeat: no-repeat;
@@ -64,16 +133,36 @@ main{
           background-image: url(../img/ico-2.png);
           background-repeat: no-repeat;
           padding-left: 28px;
+
+          @include breakpoint(max-width 979px){
+            margin-left: 25px;
+            margin-bottom: 18px;
+          }
+          @include breakpoint(max-width 479px){
+            margin-left: 0;
+            padding-left: 43px;
+            background-position: 4px 0px;
+            margin-bottom: 0;
+          }
         }
         &:nth-child(3){
           background-image: url(../img/ico-3.png);
           background-repeat: no-repeat;
           padding-left: 30px;
+
+          @include breakpoint(max-width 479px){
+            padding-left: 42px;
+          }
         }
         &:last-child{
           background-image: url(../img/ico-4.png);
           background-repeat: no-repeat;
           padding-left: 28px;
+
+          @include breakpoint(max-width 479px){
+            padding-left: 42px;
+            background-position: 2px 3px;
+          }
         }
       }
     }
@@ -93,6 +182,15 @@ main{
       @include justify-content(center);
       @include flex-direction(column);
       @include transition(all .3s ease-out);
+
+      @include breakpoint(max-width 979px){
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 118px;
+      }
+      @include breakpoint(max-width 479px){
+        margin-top: 168px;
+      }
 
       &:hover{
         @include box-shadow(0 3px 4px rgba(0,0,0,.3));

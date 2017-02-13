@@ -5,6 +5,7 @@
   width: 100%;
   box-shadow: 0 0 6px rgba(25, 25, 25, 0.15);
   background-color: #ffffff;
+
   &__wrapper{
     display: block;
     position: relative;
@@ -19,6 +20,8 @@
     @include breakpoint(max-width 767px){
       width: 90%;
       margin: 0 auto;
+      @include flex-direction(column);
+      padding-bottom: 20px;
     }
   }
   &__logo{
@@ -33,7 +36,7 @@
 
     @include breakpoint(max-width 767px){
       margin-top: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 0;
       margin-right: auto;
     }
 
@@ -50,8 +53,13 @@
     margin-top: 45px;
 
     @include breakpoint(max-width 767px){
-      margin-top: 15px;
-      margin-left: 0px;
+      margin-top: -27px;
+      margin-left: auto;
+    }
+    @include breakpoint(max-width 479px){
+      margin-left: 0;
+      text-align: center;
+      margin-top: 13px;
     }
   }
   a.call_trigger{
@@ -62,7 +70,15 @@
     padding-top: 7px;
 
     @include breakpoint(max-width 767px){
+      margin-top: 35px;
+      margin-right: auto;
       margin-left: 0;
+    }
+    @include breakpoint(max-width 479px){
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
     }
   }
 }
