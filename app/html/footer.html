@@ -2,7 +2,7 @@
 
     <div class="footer__wrapper">
 
-        <a href="/" class="footer__logo">Logo<span>type</span></a>
+        <a href="/" class="footer__logo">Ломбард<span>Займ</span></a>
 
         <div class="footer__callback">
             <a href="#open-modal" class="call_trigger">Заказать обратный звонок</a>
@@ -15,11 +15,55 @@
         <a class="close-area" href="#close"></a>
         <div class="modal_window">
             <a href="#close" title="Закрыть" class="close">X</a>
-            <h1>Заказать обратный звонок</h1>
-            <input required="required" type="text" name="name" placeholder="Имя">
-            <input required="required" type="text" name="phone" placeholder="Телефон">
-            <input type="submit" value="Заказать">
+
+                <form id="form-2">
+                    <p class="alert"></p>
+
+                    <div class="form-wrap">
+                        <h2>Заказ обратного звонка</h2>
+                        <p>Мы перезвоним вам и ответим на все интересующие вас вопросы</p>
+
+                        <input required="required" type="text" name="name" placeholder="Ваше имя">
+                        <input required="required" type="text" name="phone" placeholder="Ваш номер телефона">
+
+                        <input type="submit" value="Заказать обратный звонок">
+                    </div>
+                </form>
+
+                <p>Ваши данные не передаются третьим лицам</p>
+
         </div>
     </div>
+
+    <!— Yandex.Metrika counter —>
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter41735114 = new Ya.Metrika({
+                        id:41735114,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true,
+                        trackHash:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/41735114" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!— /Yandex.Metrika counter —>
 
 </footer>

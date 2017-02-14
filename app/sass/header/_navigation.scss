@@ -53,7 +53,11 @@
   @include display(flex);
 
   li{
-    margin-right: 30px;
+    margin-right: 22px;
+
+    &:last-child{
+      margin-right: 0;
+    }
 
     @include breakpoint(max-width 979px){
       @include display(flex);
@@ -69,7 +73,6 @@
       font-size: 16px;
       font-family: Lato-Medium;
       color: #191919;
-      letter-spacing: 1px;
       @include transition(0.4s);
       &:hover{
         color: #ffc80a;

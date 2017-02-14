@@ -65,6 +65,14 @@
         font-weight: 700;
       }
     }
+    p.perezvonim{
+        text-align: right;
+        font-size: 12px;
+
+      @include breakpoint(max-width 979px){
+        text-align: center;
+      }
+    }
     form{
       margin-top: 35px;
 
@@ -73,6 +81,13 @@
         @include flex-direction(column);
         width: 300px;
         margin: 0 auto;
+      }
+      p.alert{
+        margin-top: 55px;
+        color: #191919;
+        text-align: center;
+        font-size: 29px;
+        font-family: Lato-Black;
       }
 
       input{
@@ -88,30 +103,30 @@
           margin-bottom: 15px;
         }
 
-        &:first-child{
-          width: 240px;
-
-          @include breakpoint(max-width 979px){
-            width: 100%;
-          }
-        }
-        &:nth-child(2){
-          margin-left: 13px;
-          width: 288px;
-          margin-right: 13px;
-
-          @include breakpoint(max-width 979px){
-            width: 100%;
-            margin-left: 0;
-            margin-right: 0;
-          }
-        }
         &:last-child{
           width: 215px;
 
           @include breakpoint(max-width 979px){
             width: 100%;
           }
+        }
+      }
+      input[name=name]{
+        width: 240px;
+
+        @include breakpoint(max-width 979px){
+          width: 100%;
+        }
+      }
+      input[name=phone]{
+        margin-left: 13px;
+        width: 288px;
+        margin-right: 13px;
+
+        @include breakpoint(max-width 979px){
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
         }
       }
 
